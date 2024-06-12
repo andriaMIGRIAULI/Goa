@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>goa homework 42</title>
+</head>
+<body>
+
+<h1>სერვერისა და კლიენტის კავშირი</h1>
+
+<p id="message">კლიენტის მიერ შეყვანილი ტექსტი:</p>
+
+<input type="text" id="inputText">
+<button onclick="sendText()">გაგზავნა სერვერზე</button>
+
+<script>
+function sendText() {
+  var input = document.getElementById("inputText").value;
+  var messageParagraph = document.getElementById("message");
+  messageParagraph.textContent = "კლიენტის მიერ შეყვანილი ტექსტი: " + input;
+}
+</script>
+
+</body>
+</html>
+
